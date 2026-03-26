@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio Hero</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+
+
+
+ html{scroll-behavior:smooth}
+
+    section{scroll-margin-top:90px}
+
+    .custom-navbar{
+      position:fixed;
+      top:0;
+      width:100%;
+      z-index:1000;
+      background:rgba(0,0,0,0.7);
+      backdrop-filter:blur(6px);
+      padding:15px 0;
+    }
+
+    body{padding-top:100px}
+
+    /* .hero{height:100vh;display:flex;align-items:center;background:#111;color:#fff} */
+    .projects-section,.about-section,.skills-circle-section,.contact-modern{padding:100px 0}
+
+ body{
+  margin:0;
+  font-family:Arial, sans-serif;
+ padding-top:60px; 
+  background:#000;   /* 👈 pure black */
+  /* min-height:200vh; */
+}
+
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  padding: 15px 0;
+}
+
+/* LOGO */
+.logo{
+  font-weight:700;
+  color:#fff !important;
+  font-size:22px;
+}
+
+/* LINKS */
+.nav-link{
+    font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color:#ddd !important;
+  transition:0.3s;
+  font-weight: 600;
+}
+
+.nav-link:hover{
+  color:#c9a96e !important;
+  transform: translateY(-2px);
+}
+
+
+/* BUTTONS */
+.btn-hire{
+  background:#fff;
+  color:#6a11cb;
+  font-weight:600;
+  padding:8px 18px;
+  border-radius:6px;
+}
+.btn-hire:hover{
+   background:#6a11cb;
+  color:#fff;
+  transform: translateY(-2px);
+}
+
+.btn-resume{
+  border:1px solid #fff;
+  color:#fff;
+  padding:8px 18px;
+  border-radius:6px;
+}
+.btn-resume:hover{
+  
+    background:#c9a96e; 
+  color:#000000;
+  transform: translateY(-2px);
+}
+
+/* MOBILE FIX */
+.navbar-toggler{
+  background:#fff;
+}
+
+/* HERO */
+.hero{
+  min-height:40vh;
+  width: 100%;
+  background: url('images/abstract-background-with-digital-cyber-particles-design_1048-15577.avif') no-repeat center center;
+  background-size: cover;
+/* padding: 10px 0; */
+margin-top: 0!important;
+  color: #fff;
+  
+}
+
+/* LEFT SIDE */
+.hero-left{
+  /* background:#000; */
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:70px 80px; /* 👈 controlled spacing */
+}
+
+.hero-right{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+
+
+@media (max-width:768px){
+  .hero-right img{
+    width:140px;
+  }
+}
+.content{
+  max-width:500px;
+}
+
+.content h1{
+  font-size:48px;
+  font-weight:600;
+}
+
+/* .content h1{
+  color:#c9a96e;
+} */
+#typing-text{
+  color:#c9a96e; /* gold color */
+}
+.content p{
+  color:#aaa;
+  margin:20px 0;
+  line-height:1.6;
+}
+
+/* BUTTONS */
+.btn-gold{
+  background:#fff!important;
+  color:#6a11cb!important;
+  font-weight:600;
+  padding:8px 18px;
+  border-radius:6px;
+}
+
+.btn-gold:hover{
+  background:#6a11cb!important;
+  color:#fff!important;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light{
+  padding:10px 25px;
+}
+
+.hero-right img{
+  width:580px;
+  max-width:100%;
+  max-height:670px;   /* 👈 important line */
+  height:auto;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+
+#typing-text{
+  font-family: 'Poppins', sans-serif;
+  font-size:50px;
+  font-weight:800;
+  display:block;
+padding: 40px 0;
+  background: linear-gradient(90deg, #ff2a2a, #ff2f7d, #8a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+#typing-text::after{
+  content: "|";
+  margin-left:5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  0%,100%{opacity:1;}
+  50%{opacity:0;}
+}
+
+.outline-text{
+  font-size:80px;
+  font-weight:800;
+
+  color: transparent;
+  -webkit-text-stroke: 1px #e9e9e9;
+
+  background: none !important;
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+
+  .hero-left{
+    padding:60px 30px;
+    text-align:center;
+  }
+
+  .content h1{
+    font-size:34px;
+  }
+
+  .hero-right img{
+    width:220px; /* 👈 mobile size */
+  }
+}
+
+
+
+
+
+
+.about-section{
+  background:#000;
+
+}
+
+/* CARD */
+.about-card{
+  max-width:1050px;
+  padding:60px 30px;
+  border-radius:16px;
+
+  background: url('images/black-abstract-background-with-fading-purple-green-glowing-lines_506530-3658.avif') no-repeat center center;
+  background-size: cover;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  transition:0.4s ease;
+}
+
+/* ✨ GOLDEN HOVER EFFECT */
+.about-card:hover{
+  transform: translateY(-10px) scale(1.01);
+
+  box-shadow: 
+    0 0 20px rgba(201,169,110,0.4),
+    0 0 40px rgba(201,169,110,0.3),
+    0 0 80px rgba(201,169,110,0.2);
+}
+
+/* TITLE */
+
+.about-title{
+  font-size:32px;
+  font-weight:700;
+  color:#fff;
+  text-align:center;
+}
+
+/* TEXT */
+.about-text{
+  color:#bbb;
+  line-height:1.7;
+}
+
+/* HIGHLIGHT */
+.highlight{
+  color:#8a2be2;
+  font-weight:600;
+}
+
+/* IMAGE */
+.about-img{
+  width:300px;
+  height: 400px;
+  border-radius:10%;
+  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+
+/* BUTTON */
+.btn-gold{
+  background:#c9a96e;
+  color:#000;
+  border:none;
+}
+
+.btn-gold:hover{
+  background:#b8955c;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .about-card{
+    padding:25px 20px;
+  }
+
+  .about-title{
+    font-size:26px;
+  }
+
+  .about-img{
+    width:150px;
+  }
+}
+
+
+
+
+.skills-circle-section{
+  background:#000;
+  padding:160px 0 140px;
+  position:relative;
+  z-index:1;
+  overflow:hidden;
+}
+
+.circle-wrapper{
+  position:relative;
+  width:820px;
+  height:820px;
+  margin:0 auto;
+}
+
+.center-img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  z-index:5;
+}
+
+.center-img img{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid rgba(213, 168, 85, 0.4);
+  box-shadow: 
+    0 0 20px rgba(201,169,110,0.4),
+    0 0 40px rgba(201,169,110,0.3),
+    0 0 80px rgba(201,169,110,0.2);
+}
+
+/* HEX BASE */
+.hex{
+  position:absolute;
+  width:240px;
+  height:270px;
+  perspective:1000px;
+}
+
+/* HEX INNER FLIP */
+.hex-inner{
+  width:100%;
+  height:100%;
+  position:relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.hex:hover .hex-inner{
+  transform: rotateY(180deg);
+}
+
+.hex-front{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+  color:#fff;
+  background-size:cover;
+  background-position:center;
+}
+
+.hex-front h3{
+  margin-bottom:10px;
+  font-size:20px;
+  font-weight:700;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.skill-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.skill-list li{
+  font-size:14px;
+  margin:4px 0;
+  padding:6px 10px;
+  background:rgba(0, 0, 0, 0.753);
+  border-radius:20px;
+  display:inline-block;
+}
+
+/* FRONT */
+.hex-front,
+.hex-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  font-weight:600;
+  border-radius:15px;
+  backface-visibility:hidden;
+  /* color:#fff; */
+  padding:20px;
+  clip-path: polygon(
+    30% 0%, 70% 0%, 
+    100% 30%, 100% 70%, 
+    70% 100%, 30% 100%, 
+    0% 70%, 0% 30%
+  );
+}
+
+/* FRONT IMAGE */
+.hex-front{
+  font-size:20px;
+  background-size:cover;
+  background-position:center;
+   color:#fff;
+}
+
+/* BACK IMAGE / TEXT */
+.hex-back{
+  font-size:17px;
+  transform: rotateY(180deg);
+  background-size:cover;
+  background-position:center;
+   /* color:#000000; */
+}
+
+.hex-back{
+  color:#ffffff;
+  background:#ffffff!important;
+}
+
+/* HOVER GLOW */
+.hex:hover .hex-front{
+  box-shadow:
+    0 0 30px rgba(99,102,241,0.9),
+    0 0 90px rgba(139,92,246,0.6);
+}
+
+/* HEX POSITIONS */
+.hex1{ top:-40px; left:50%; transform:translateX(-50%); }
+.hex2{ top:110px; right:-80px; }
+.hex4{ bottom:110px; right:-80px; }
+.hex5{ bottom:-40px; left:50%; transform:translateX(-50%); }
+.hex6{ bottom:110px; left:-80px; }
+.hex8{ top:110px; left:-80px; }
+
+/* BACKGROUND GLOW */
+.skills-circle-section::before{
+  content:"";
+  position:absolute;
+  width:600px;
+  height:600px;
+  background:radial-gradient(circle, rgba(99,102,241,0.25), transparent 70%);
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  z-index:0;
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+  .circle-wrapper{
+    width:100%;
+    height:auto;
+  }
+  .hex{
+    position:relative;
+    margin:25px auto;
+    display:block;
+  }
+  .center-img{
+    position:relative;
+    transform:none;
+    margin-bottom:40px;
+  }
+}
+
+
+
+.projects-section {
+      padding: 60px 40px;
+      /* background: #0101016d; */
+        background: url('images/abstract-background-with-digital-cyber-particles-design_1048-15577.avif') no-repeat center center;
+  background-size: cover;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+   
+    .section-title h2 {
+      font-size: 32px;
+      margin-top: 10px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .projects-wrapper {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 20px;
+    }
+
+    /* Sidebar */
+    .project-sidebar {
+      background: #000;
+      color: #fff;
+    }
+
+    .project-sidebar ul {
+      list-style: none;
+    }
+
+    .project-sidebar li {
+      padding: 18px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .project-sidebar li.active,
+    .project-sidebar li:hover {
+      background: #d8b47a;
+      color: #000;
+      font-weight: 600;
+    }
+
+    /* Projects grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      opacity: 0;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .projects-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .project-sidebar ul {
+        display: flex;
+        overflow-x: auto;
+      }
+
+      .project-sidebar li {
+        white-space: nowrap;
+        border-bottom: none;
+        border-right: 1px solid rgba(255,255,255,0.1);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    .project-card {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 0.6s ease;
+}
+
+/* visible state */
+.project-card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+
+.contact-modern { background: url('images/black-abstract-background-with-fading-purple-green-glowing-lines_506530-3658.avif') no-repeat center center; background-size: cover; padding: 80px 0; margin: 0; }
+
+.contact-modern h2{
+  color: #ffffff;
+}
+
+.contact-info-card {
+  background: #c627e64a;
+  border-radius: 16px;
+  color: #fff;
+  max-height: 300px;
+}
+
+.image-card {
+  background: #00000091;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* image card */ .image-card { background: #00000091; border-radius: 16px; overflow: hidden; text-align: center; box-shadow: 0 10px 30px rgba(230, 157, 31, 0.577); } .image-card img { max-height: 280px; object-fit: cover; }
+
+
+.btn-resume {
+  background: #00f5ff;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+
+/* =========================
+   MOBILE RESPONSIVE FIXES
+   Design unchanged – Clean merged version
+=========================*/
+
+html, body{
+  overflow-x:hidden;
+}
+
+/* ================= HERO ================= */
+/* ================= HERO RESPONSIVE ================= */
+
+/* Tablet and below (stack only below 768) */
+@media(max-width:767px){
+
+  .hero{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-left{
+    order:1;
+    padding:40px 20px;
+  }
+
+  .hero-right{
+    order:2;
+    margin-top:20px;
+  }
+
+  .hero-right img{
+    width:220px;
+    max-width:90%;
+  }
+
+  #typing-text{
+    font-size:32px;
+    padding:20px 0;
+  }
+
+  .outline-text{
+    font-size:42px;
+  }
+
+  .btn-gold{
+    margin-bottom: 25px;
+  }
+}
+
+/* ================= SKILLS HEXAGON ================= */
+ @media(max-width:992px){
+  .circle-wrapper{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .hex{
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    transform:none !important;
+    margin:20px 0;
+  }
+
+  .center-img{
+    position:relative;
+    top:auto;
+    left:auto;
+    transform:none;
+    margin-bottom:30px;
+  }
+} 
+
+
+
+
+
+
+
+@media(max-width:576px){
+  .hex{
+    width:180px;
+    height:210px;
+  }
+
+  .center-img img{
+    width:150px;
+    height:150px;
+  }
+}
+
+/* ================= PROJECTS SECTION ================= */
+@media(max-width:768px){
+
+  .projects-section{
+    padding:50px 15px;
+  }
+
+  .projects-wrapper{
+    display:block;
+  }
+
+  .project-sidebar{
+    width:100%;
+  }
+
+  .project-sidebar ul{
+    display:flex;
+    overflow-x:auto;
+    gap:10px;
+    padding-bottom:10px;
+  }
+
+  .project-sidebar li{
+    white-space:nowrap;
+    flex:0 0 auto;
+    border-right:1px solid rgba(255,255,255,0.1);
+  }
+
+  .projects-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+    height:auto !important;
+    overflow:visible !important;
+  }
+
+  .project-card{
+    width:100%;
+    margin-bottom:20px;
+    opacity:1 !important;      /* ensure visible */
+    transform:none !important; /* disable animation on mobile */
+    overflow:visible;
+  }
+
+  .project-card img{
+    width:100%;
+    height:auto;
+    max-height:none;
+  }
+}
+
+/* ================= ABOUT ================= */
+@media(max-width:768px){
+  .about-card{
+    padding:25px 15px;
+    text-align:center;
+  }
+
+  .about-img{
+    width:160px;
+    height:auto;
+  }
+}
+
+/* ================= CONTACT ================= */
+@media(max-width:768px){
+  .contact-modern{
+    padding:50px 15px;
+  }
+
+  .contact-info-card,
+  .image-card{
+    margin-bottom:20px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand logo nav-link" href="#"> Portfolio</a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu + Buttons -->
+    <div class="collapse navbar-collapse justify-content-between" id="nav">
+
+      <!-- Center Links -->
+      <ul class="navbar-nav mx-auto gap-lg-4 text-center">
+  <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+  <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+  <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+  <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+</ul>
+
+      <!-- Right Buttons -->
+      <div class="d-flex gap-2 justify-content-center mt-3 mt-lg-0">
+        <a href="#contact" class="btn btn-hire">Hire Me</a>
+        <a href="images/khushbu-resume.pdf.pdf" class="btn btn-resume" download>Resume</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="container-fluid">
+    <div class="row g-0 align-items-center">
+
+      <!-- LEFT -->
+      <div class="col-md-6 hero-left">
+        <div class="content">
+          
+        <h1>
+             <span id="outline-text" class="outline-text"></span>
+ <span id="typing-text"></span>
+          </h1>
+
+        
+          <div class="btns">
+           <a href="#projects" class="btn btn-gold">VIEW WORK</a>
+            <a href="#contact" class="btn btn-outline-light">CONTACT ME</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-md-6 hero-right">
+        <img src="images/Screenshot 2026-03-21 233816.png" alt="profile">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="about" class="about-section py-5 text-center">
+  <div class="container">
+
+    <!-- TITLE OUTSIDE CARD -->
+    <h2 class="about-title mb-4 mt-5">ABOUT US</h2>
+
+    <!-- CARD -->
+    <div class="d-flex justify-content-center">
+      <div class="about-card">
+
+        <p class="about-text mt-3">
+          I am a <span class="highlight">Web & UI/UX Designer</span> with 1.8+ years of hands-on experience 
+          in designing and developing responsive websites. I have experience working with 
+          HTML, CSS, JavaScript, WordPress, and Figma to create user-friendly and visually 
+          appealing web pages.
+        </p>
+
+        <p class="about-text">
+          I specialize in responsive web design, landing page development, and website 
+          customization. I have worked on blog pages, enterprise landing pages, and 
+          responsive UI layouts while ensuring good user experience and basic SEO practices.
+        </p>
+
+<a href="images/khushbu-resume.pdf.pdf" download class="btn btn-resume">
+  Download Resume
+</a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section id="projects" class="projects-section">
+  <div class="section-title">
+    <h2>PROJECTS</h2>
+  </div>
+
+  <div class="projects-wrapper mt-5">
+    <!-- Sidebar Filters -->
+    <div class="project-sidebar">
+      <ul>
+        <li class="active" data-filter="all">ALL PROJECTS</li>
+        <li data-filter="web">WEB DESIGN</li>
+        <li data-filter="uiux">UI/UX DESIGN</li>
+        <li data-filter="landing">LANDING PAGES</li>
+        <!-- <li data-filter="email">EMAIL TEMPLATES</li> -->
+        <li data-filter="wordpress">WORDPRESS PROJECTS</li>
+      </ul>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="projects-grid">
+
+      <!-- Web Design -->
+      <a href="https://talentanywhere.ai/" class="project-card" data-category="web">
+        <img src="images/Screenshot 2026-03-19 225201.png" />
+        <div class="project-overlay">TalentAnywhere Project</div>
+      </a>
+
+        <a href="https://talentanywhere.ai/" class="project-card" data-category="web">
+        <img src="images/Screenshot 2026-03-22 001502.png" />
+        <div class="project-overlay">Portfolio Project</div>
+      </a>
+
+      <!-- UI UX -->
+      <a href="https://www.figma.com/design/KnzriQEjzS73NSLJ5Purpp/Untitled?node-id=0-1&p=f" class="project-card" data-category="uiux">
+        <img src="images/Screenshot 2026-03-20 212719.png" />
+        <div class="project-overlay">UI/UX Case Study</div>
+      </a>
+
+      <!-- Landing Page -->
+      <a href="https://talentanywhere.ai/pricing/" class="project-card" data-category="landing">
+        <img src="images/Screenshot 2026-03-20 214456.png" />
+        <div class="project-overlay">Pricing Page Design</div>
+      </a>
+       <a href="https://talentanywhere.ai/contact-us/" class="project-card" data-category="landing">
+        <img src="images/Screenshot 2026-03-20 214744.png" />
+        <div class="project-overlay">Contact Us Page Design</div>
+      </a>
+
+
+      <!-- WordPress -->
+      <a href="https://talentanywhere.ai/blogs/" class="project-card" data-category="wordpress">
+        <img src="images/Screenshot 2026-03-20 215021.png" />
+        <div class="project-overlay">WordPress Blogs</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="skills" class="skills-circle-section">
+  <div class="container">
+    <div class="circle-wrapper">
+
+      <!-- CENTER IMAGE -->
+      <div class="center-img text-center">
+  <h2 style="color: white; font-size: 2rem; font-weight: bold; margin: 0;">
+    SKILLS
+  </h2>
+</div>
+
+      <!-- HEX CARDS -->
+   <div class="hex hex1">
+  <div class="hex-inner">
+
+    <!-- FRONT -->
+    <div class="hex-front" style="background-image:url('images/cracked-texture-background-with-vibrant-purple-and-blue-gradient-color-transition-photo.jpeg')">
+      <h3>🧩 UI/UX Process</h3>
+     
+    </div>
+
+    <!-- BACK (same content instead of image) -->
+    <div class="hex-back" style="background:#111;">
+      <div>
+       
+        <ul class="skill-list">
+            
+          <li>Wireframing</li>
+          <li>Prototyping</li>
+          <li>User Flow</li>
+          <li>Usability</li>
+          <li>Information Architecture</li>
+        </ul>
+      </div>
+    </div>
+
+  
+        </div>
+      </div>
+
+     <div class="hex hex2">
+  <div class="hex-inner">
+
+    <!-- FRONT -->
+    <div class="hex-front" style="background-image:url('images/cracked-texture-background-with-vibrant-purple-and-blue-gradient-color-transition-photo.jpeg')">
+      <h3>💻 Web Development
+</h3>
+    
+    </div>
+
+    <div class="hex-back" style="background:#111;">
+      <div>
+       
+        <ul class="skill-list">
+            <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+         <li>Css3</li>
+        <li>Bootstrap</li>
+         <li>Tailwind Css</li>
+           <!-- <li>PHP</li>
+        <li>MySQL</li> -->
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      <div class="hex hex4">
+        <div class="hex-inner">
+          <div class="hex-front" style="background-image:url('images/cracked-texture-background-with-vibrant-purple-and-blue-gradient-color-transition-photo.jpeg')">
+            <h3>📧 Email Design</h3>
+     
+          </div>
+          <div class="hex-back" style="background:#111;">
+      <div>
+       
+        <ul class="skill-list">
+            <li>Responsive Email Design
+</li>
+        <li>Email Template Design</li>
+         <li>Email Marketing Design</li>
+        </ul>
+      </div>
+    </div>
+
+        </div>
+      </div>
+
+      <div class="hex hex5">
+        <div class="hex-inner">
+          <div class="hex-front" style="background-image:url('images/cracked-texture-background-with-vibrant-purple-and-blue-gradient-color-transition-photo.jpeg')">
+            <h3>🌐 Web Design</h3>
+      
+          </div>
+          <div class="hex-back" style="background:#111;">
+      <div>
+       
+        <ul class="skill-list">
+             <li>Visual Design</li>
+        <li>Layout Design</li>
+         <li>Landing Page Design</li>
+          <li>
+Responsive Design</li>
+          
+        </ul>
+      </div>
+    </div>
+        </div>
+      </div>
+
+      <div class="hex hex6">
+        <div class="hex-inner">
+          <div class="hex-front" style="background-image:url('images/cracked-texture-background-with-vibrant-purple-and-blue-gradient-color-transition-photo.jpeg')">
+           <h3>🛠 Design / AI tools</h3>
+      
+    
+          </div>
+           <div class="hex-back" style="background:#111;">
+      <div>
+       
+        <ul class="skill-list">
+             <li>Wordpress</li>
+        <li>Figma</li>
+         <li>Vs code</li>
+        <li>Canva</li>
+         <li>Cursor</li>
+          <li>Chat Gpt</li>
+           <li>Gemini</li>
+
+
+        
+        </ul>
+      </div>
+    </div>
+        </div>
+      </div>
+
+      <div class="hex hex8">
+        <div class="hex-inner">
+          <div class="hex-front" style="background-image:url('images/cracked-texture-background-with-vibrant-purple-and-blue-gradient-color-transition-photo.jpeg')">
+              <h3> ⚡ Search Engine Optimization</h3>
+    
+          </div>
+         <div class="hex-back" style="background:#111;">
+      <div>
+       
+        <ul class="skill-list">
+              <li>On-Page SEO
+</li>
+        <li>Page Speed Optimization</li>
+         <li>Image Optimization</li>
+           
+        </ul>
+      </div>
+    </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section id="contact" class="contact-modern py-5">
+  <div class="container">
+
+    <!-- SECTION HEADING -->
+    <div class="text-center mb-5">
+      <h2 class="contact-get-in fw-bold display-7 text-uppercase mt-5">Contact Us</h2>
+      <h5 class="text-primary mt-4 mb-5">Get in Touch</h5>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+
+      <!-- LEFT SIDE: CONTACT INFO -->
+      <div class="col-lg-6">
+        <div class="contact-info-card p-4">
+
+          <h3 class="fw-bold mb-4">Contact Information</h3>
+
+          <div class="d-flex mb-3">
+            <div class="icon me-3">📧</div>
+            <div>
+              <strong>Email</strong><br>
+              <small>khushburay9818@gmail.com</small>
+            </div>
+          </div>
+
+          <div class="d-flex mb-3">
+            <div class="icon me-3">📞</div>
+            <div>
+              <strong>Phone</strong><br>
+              <small>8851339535</small>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="icon me-3">🔗</div>
+           <div>
+  <strong>LinkedIn</strong><br>
+  <small>
+    <a href="https://www.linkedin.com/in/khushbu-singh-3291a53b7" target="_blank" style="color:#fff; text-decoration:underline;">
+      View my LinkedIn profile
+    </a>
+  </small>
+</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: IMAGE -->
+     <div class="col-lg-6"> <div class="image-card"> <img src="images/Gemini_Generated_Image_ye2g4tye2g4tye2g.png" class="img-fluid"> </div> 
+
+    </div>
+  </div>
+</section>
+
+
+<footer style="background:#111; color:white; text-align:center; padding:20px 0; margin-top:50px;">
+  <p style="margin:0;">
+    &copy; <span id="year"></span> Khushbu Singh. All Rights Reserved.
+  </p>
+</footer>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const cards = document.querySelectorAll(".project-card");
+  const section = document.querySelector(".projects-section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            card.classList.add("show");
+          }, index * 200); // delay for one-by-one effect
+        });
+
+        observer.unobserve(section);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(section);
+
+});
+</script>
+
+
+
+<script>
+  const filters = document.querySelectorAll('.project-sidebar li');
+  const cards = document.querySelectorAll('.project-card');
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.project-sidebar li')
+        .forEach(li => li.classList.remove('active'));
+
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+
+      cards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const outlineText = "Hello, I'm Khushbu Singh";
+const typingText = "Web & UI/UX Designer";
+
+let i = 0;
+let j = 0;
+
+const speed = 80;
+
+const outlineEl = document.getElementById("outline-text");
+const typingEl = document.getElementById("typing-text");
+
+// Step 1: Outline typing
+function typeOutline() {
+  if (i < outlineText.length) {
+    outlineEl.textContent += outlineText.charAt(i);
+    i++;
+    setTimeout(typeOutline, speed);
+  } else {
+    // Step 2: start second line after first finishes
+    setTimeout(typeTyping, 300);
+  }
+}
+
+// Step 2: Gradient typing
+function typeTyping() {
+  if (j < typingText.length) {
+    typingEl.textContent += typingText.charAt(j);
+    j++;
+    setTimeout(typeTyping, speed);
+  }
+}
+
+window.onload = typeOutline;
+</script>
+
+
+
+
+<script>
+const cards = document.querySelectorAll(".project-card");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+cards.forEach(card => observer.observe(card));
+</script>
+
+
+
+
+
+</body>
+</html>
